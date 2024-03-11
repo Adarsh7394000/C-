@@ -61,8 +61,8 @@ class op
     {
         Console.WriteLine("Enter character");
         char var = Convert.ToChar(Console.ReadLine());
-        if (var == 'a' || var == 'A' || var == 'e' || var == 'E' || var == 'i' || var == 'I'
-            || var == 'o' || var == 'O' || var == 'u' || var == 'U')
+        bool temp=(var == 'a' || var == 'A' || var == 'e' || var == 'E' || var == 'i' || var == 'I'|| var == 'o' || var == 'O' || var == 'u' || var == 'U')?true:false;
+        if(temp)
         {
             Console.WriteLine($"Character {var} is a vowel");
         }
@@ -70,6 +70,7 @@ class op
         {
             Console.WriteLine($"Character {var} is a consonant");
         }
+        
     }
     static void checkBMI()
     {
@@ -97,6 +98,6 @@ class op
     }
     public static void Main(string[] args)
     {
-        checkBMI();
+        checkVowelOrConstant();
     }
 }
